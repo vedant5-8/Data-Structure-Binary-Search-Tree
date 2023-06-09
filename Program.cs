@@ -39,6 +39,17 @@ namespace Data_Structure___Binary_Search_Tree
             Console.WriteLine("\nPostOrder: ");
             bTree.PostOrder(bTree.ReturnRoot());
 
+            bool found = bTree.Search(63);
+
+            if (found)
+            {
+                Console.WriteLine("\nThe element was found");
+            }
+            else
+            {
+                Console.WriteLine("\nThe element was not found");
+            }
+
         }
     }
 }

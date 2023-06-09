@@ -84,5 +84,28 @@ namespace Data_Structure___Binary_Search_Tree
             }
         }
 
+        public bool Search(int data)
+        {
+            Node current = root;
+
+            while (current != null)
+            {
+                if (data == current.data)
+                {
+                    return true;
+                } 
+                else if (data < current.data)
+                {
+                    current = current.left;
+                } 
+                else
+                {
+                    current = current.right;
+                }
+            }
+
+            return false;
+        }
+
     }
 }
