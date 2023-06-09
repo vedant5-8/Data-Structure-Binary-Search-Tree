@@ -83,5 +83,6 @@ namespace Data_Structure___Binary_Search_Tree
                 Console.Write(root.data + " ");
             }
         }
+
     }
 }
